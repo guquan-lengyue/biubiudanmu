@@ -46,7 +46,7 @@ class danmuClient extends Client {
         return
       }
       const danmuContent = <DanmuContent>JSON.parse(<string>l.metadata.content)
-      danmu.push({ ...danmuContent, characterId: l.characterId })
+      danmu.push({ ...danmuContent, characterId: l.characterId, noteId: l.noteId })
     })
     return danmu
   }

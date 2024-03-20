@@ -16,5 +16,6 @@ export type DanmuContent = {
 export type Danmu = {
   // the poster's characterId
   characterId: number
-
+  // danmu noteId
+  noteId: number
 } & DanmuContent
