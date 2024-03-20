@@ -1,4 +1,4 @@
-export type Danmu = {
+export type DanmuContent = {
   // danmu text (required)
   txt: string
   // how many ms after the video start to show the danmu. unit ms (required)
@@ -12,3 +12,9 @@ export type Danmu = {
   // the language of danmu
   lang?: string
 }
+
+export type Danmu = {
+  // the poster's characterId
+  characterId: number
+
+} & DanmuContent
