@@ -57,7 +57,7 @@ export class Client {
   ) {
     const { data } = await this.contract.note.postForNote({
       characterId: this.chartId!,
-      metadataOrUri: { content: JSON.stringify(content), sources, title },
+      metadataOrUri: { content: content, sources, title },
       targetCharacterId,
       targetNoteId
     })
